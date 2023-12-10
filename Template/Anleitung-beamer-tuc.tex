@@ -86,6 +86,19 @@
 \section{Task definition and objective}
 \begin{frame}
   \frametitle{Objectives}
+  \begin{itemize}
+    \item Governing equ:\\
+      \begin{equation}
+        \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho}\nabla p + \nu \nabla^2 \mathbf{u} + \mathbf{f}
+      \end{equation}
+    \item w.r.t boundary conditions:\\
+    \begin{align}
+      \mathbf{u} &= \mathbf{u}_0 \quad \text{at} \quad \Gamma_1 \\
+      \mathbf{u} &= 0 \quad \text{at} \quad \Gamma_2 \\
+      \frac{\partial p}{\partial n} &= 0 \quad \text{at} \quad \Gamma_3
+    \end{align}
+
+  \end{itemize}
 \end{frame}
 
 
@@ -93,11 +106,17 @@
 \section{Approache}
 \begin{frame}
   \frametitle{Approaches}
+  \begin{itemize}
+    \item 
+  \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Initial Results}
 \begin{frame}
   \frametitle{Results}
+  \begin{minipage}{0.55\textwidth}
+    \includegraphics[width=0.30\textwidth, trim={0cm 0cm 0cm 0cm}, clip]{Taylor-couette.png}
+  \end{minipage}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

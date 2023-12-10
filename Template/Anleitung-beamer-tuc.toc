@@ -1,4 +1,4 @@
-\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}\relax 
 \beamer@sectionintoc {1}{Problem Statment}{3}{0}{1}
 \beamer@sectionintoc {2}{Task definition and objective}{4}{0}{2}
 \beamer@sectionintoc {3}{Approache}{5}{0}{3}
