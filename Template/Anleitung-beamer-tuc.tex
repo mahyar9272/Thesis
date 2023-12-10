@@ -1,6 +1,6 @@
 \documentclass[aspectratio=169]{beamer}
 \usepackage[ngerman]{babel}
-\usepackage[utf8]{inputenc}
+\usepackage{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{listings}
@@ -44,7 +44,8 @@
     \usetheme{TUC2}
   %  \usefonttheme{structureitalicserif}
     \setbeamercovered{transparent}
-\newcommand{\FEsq}{FE$^2\,$}
+
+\newcommand{\rhomath}{\( \mathrm{\rho} \)}
 
 \mode<presentation>
     \title{Neural Network-based Detection of Taylor Vortices in Annular Flow Systems}
@@ -73,10 +74,11 @@
 \section{Problem Statment}
 \begin{frame}
   \frametitle{Problem Statment}
-  \large \color{TUCgreen}\textbf{Taylor-coutte Flow}
+  \large \color{TUCgreen}\textbf{Taylor-Couette Flow}
   \begin{itemize}
-    \item is defined as a fluid dynamic phenomenon that occurs when a fluid is passing between two coaxial-rotating cylinders.
-    \item 
+    \item It is defined as a fluid dynamic phenomenon that occurs when a fluid is passing between two coaxial-rotating cylinders.
+    \item Inner cylinder is typically rotating faster than outer cylinder. This configuration can lead to various flow patterns and instabilities.
+    \item Dimensionless control parameters like \(\mathnormal{Re}\), ration of cylinder radii, 
   \end{itemize}
 \end{frame}
 
