@@ -31,6 +31,39 @@ Liang, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Lu%
+, Jin%
+, Pang%
+, Zhang%
+\BCBL {}\ \BBA {} Karniadakis%
+}{%
+Lu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+lu2021learning}
+\APACinsertmetastar {%
+lu2021learning}%
+\begin{APACrefauthors}%
+Lu, L.%
+, Jin, P.%
+, Pang, G.%
+, Zhang, Z.%
+\BCBL {}\ \BBA {} Karniadakis, G\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Learning nonlinear operators via {DeepONet} based on the
+  universal approximation theorem of operators} {Learning nonlinear operators
+  via {DeepONet} based on the universal approximation theorem of
+  operators}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Machine Intelligence}{3}{3}{218--229}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Wang%
 , Deng%
 , Yang%

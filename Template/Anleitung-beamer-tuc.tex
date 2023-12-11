@@ -134,12 +134,46 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Results}
-  \begin{minipage}{0.55\textwidth}
-    \includegraphics[width=0.30\textwidth, trim={0cm 0cm 0cm 0cm}, clip]{Taylor-couette.png}
+  \frametitle{Deep operator networks\cite{lu2021learning} (DeepONets)}\
+  \centering
+  \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=0.8\textwidth, trim={8.12cm 0cm 0cm 0cm}, clip]{deeponet.pdf}
   \end{minipage}
+  \begin{minipage}{0.45\textwidth}
+    \begin{itemize}
+      \item Each input function $u$ is evaluated at fixed sensor points $\{x_1, x_2, \dots, x_m\}$ 
+      \item $y$ with $d$ components and $u(x_i)$ for $i = {1,2, \dots, m}$ are not matched. Therefor, it is needed to use two subnets. 
+      \textbf{Branch} for encoding input function at sensor points - \textbf{Trunk} for the location to evaluate output function
+    \end{itemize}
+  \begin{equation}
+    G(u)(y) \approx \sum_{k=1}^p b_k t_k+b_0
+  \end{equation}
+\end{minipage}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Deep operator networks (DeepONets): prediction of $\lambda_2$}\
+  
+\begin{minipage}{0.30\textwidth}
+    Inputs of branch: \\$\mathbf{u} \in \mathbb{R}^3$, ($N_s$, 3)
 
+    Outputs of branch: \\$\boldsymbol{b} \in \mathbb{R}^{N_f}$, ($N_s$, $N_f$)
+
+    \vspace{\baselineskip}
+
+    Inputs of trunk: \\$\mathbf{X} \in \mathbb{R}^{128000}$, (128000, 3)
+
+    Outputs of trunk: \\$\boldsymbol{t} \in \mathbb{R}^{N_f}$, (128000, $N_f$)
+\end{minipage}
+\begin{minipage}{0.30\textwidth}
+    \includegraphics[width=\textwidth, trim={10.05cm 0cm 0cm 4.8cm}, clip]{deeponet.pdf}
+\end{minipage}
+\begin{minipage}{0.35\textwidth}
+
+  Outputs: \\$\boldsymbol{u} \in \mathbb{R}^{1\times128000}$, \\($N_s$, $N_f$) $\bigotimes$ (128000, $N_f$)$^{T}$
+
+\end{minipage}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
 %\frametitle{}\
@@ -184,6 +218,7 @@
 \end{minipage}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Time Planning}
 \begin{frame}
@@ -196,6 +231,7 @@
   \end{center} 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
   % \centering
   \begin{minipage}{0.1\textwidth}
