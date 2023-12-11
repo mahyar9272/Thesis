@@ -22,11 +22,11 @@ np.random.seed(SEED)
 tf.random.set_seed(SEED)
 
 
-# gpus = tf.config.experimental.list_physical_devices('GPU')
-# for gpu in gpus:
-#   tf.config.experimental.set_memory_growth(gpu, True)
+gpus = tf.config.experimental.list_physical_devices('GPU')
+for gpu in gpus:
+  tf.config.experimental.set_memory_growth(gpu, True)
 
-# tf.config.set_visible_devices(gpus, 'GPU')
+tf.config.set_visible_devices(gpus, 'GPU')
 
 
 
@@ -101,7 +101,7 @@ def gen_models(nf, nv, act, nn, nl, n_out):
     return model
 
 m = 3
-r = 10
+r = 8
 
 act = tf.keras.activations.swish
 branch = gen_models(m, r, act, 64, 4, 1)
@@ -111,7 +111,7 @@ trunk = gen_models(3, r, act, 128, 4, 3)
 print(trunk.summary())
 
 #%%
-n_batches = 100
+n_batches = 128
 batch_size = int(len(X_train) / n_batches)
 
 initial_learning_rate = 1e-3
@@ -129,7 +129,7 @@ model.compile(
     )
 start_time = time()
 hist = model.fit(X_train, y_train, 
-          epochs=4000, 
+          epochs=1000, 
           batch_size = batch_size, 
           validation_data=(X_test, y_test), 
           verbose = 2)
