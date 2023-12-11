@@ -1,6 +1,6 @@
 \documentclass[aspectratio=169]{beamer}
-\usepackage{babel}
-\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{listings}
@@ -44,11 +44,12 @@
     \usetheme{TUC2}
   %  \usefonttheme{structureitalicserif}
     \setbeamercovered{transparent}
-\newcommand{\FEsq}{FE$^2\,$}
+
+\newcommand{\rhomath}{\( \mathrm{\rho} \)}
 
 \mode<presentation>
     \title{Neural Network-based Detection of Taylor Vortices in Annular Flow Systems}
-    \subtitle{}
+    \subtitle{Exposé for Master Thesis - Initial Presentation}
     \author{\textbf{Mahyar Alikhani}}
     \institute{Institute of Applied Mechanics}
     \date{\today}
@@ -70,15 +71,34 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Fundamental Principles}
+\section{Problem Statment}
 \begin{frame}
-  \frametitle{Fundamental Principles}
+  \frametitle{Problem Statment}
+  \large \color{TUCgreen}\textbf{Taylor-Couette Flow}
+  \begin{itemize}
+    \item It is defined as a fluid dynamic phenomenon that occurs when a fluid is passing between two coaxial-rotating cylinders.
+    \item Inner cylinder is typically rotating faster than outer cylinder. This configuration can lead to various flow patterns and instabilities.
+    \item Dimensionless control parameters like \(\mathnormal{Re}\), ration of cylinder radii, 
+  \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Objective}
+\section{Task definition and objective}
 \begin{frame}
   \frametitle{Objectives}
+  \begin{itemize}
+    \item Governing equ:\\
+      \begin{equation}
+        \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho}\nabla p + \nu \nabla^2 \mathbf{u} + \mathbf{f}
+      \end{equation}
+    \item w.r.t boundary conditions:\\
+    \begin{align}
+      \mathbf{u} &= \mathbf{u}_0 \quad \text{at} \quad \Gamma_1 \\
+      \mathbf{u} &= 0 \quad \text{at} \quad \Gamma_2 \\
+      \frac{\partial p}{\partial n} &= 0 \quad \text{at} \quad \Gamma_3
+    \end{align}
+
+  \end{itemize}
 \end{frame}
 
 
@@ -86,11 +106,17 @@
 \section{Approache}
 \begin{frame}
   \frametitle{Approaches}
+  \begin{itemize}
+    \item 
+  \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Initial Results}
 \begin{frame}
   \frametitle{Results}
+  \begin{minipage}{0.55\textwidth}
+    \includegraphics[width=0.30\textwidth, trim={0cm 0cm 0cm 0cm}, clip]{Taylor-couette.png}
+  \end{minipage}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
