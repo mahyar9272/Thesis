@@ -71,15 +71,30 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Problem Statment}
+\section{Problem Statement}
 \begin{frame}
-  \frametitle{Problem Statement}
+  \frametitle{Turbulent Flows and Vortices}
+  \begin{itemize}
+    \item Vortical formations are crucial components in the dynamics of turbulence, contributing to processes such as the generation of turbulence, amplification of mass, heat, and momentum transport.
+    \item A vortex is characterized by swiriling motion of fluid around a central region.
+    \item Translating this feature into a formal definition is challenging. 
+  \end{itemize}
+  \centering
+  \textit{''A vortex exists when instantaneous streamlines mapped onto a
+  plane normal to the vortex core exhibit a roughly circular or spiral
+  pattern, when viewed from a reference frame moving with the
+  center of the vortex core.''}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Taylor-Couette flow}
+\begin{frame}
   \begin{minipage}{0.45\textwidth}
     \large \color{TUCgreen}\textbf{Taylor-Couette flow}
     \begin{itemize}
-      \item a fluid dynamic phenomenon that occurs when a fluid is passing between two coaxial-rotating cylinders.
+      \item a Fluid dynamic phenomenon that occurs when a fluid is passing between two coaxial-rotating cylinders.
       \item Inner cylinder is typically rotating faster than outer cylinder.
-      \item Dimensionless control parameters like \(\mathnormal{Re}\), $\omega_{inner}$ and $\omega_{outter}$  are key factors
+      \item Dimensionless control parameters like \(\mathnormal{Re}\), $\omega_{inner}$ and $\omega_{outer}$  are key factors
     \end{itemize}
   \end{minipage}
   \begin{minipage}{0.45\textwidth}
@@ -90,6 +105,32 @@
       \caption{\tiny{Taylor-couette flow at time-step 19}}
     \end{figure}
   \end{minipage}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Vortex Detection Algorithms}
+\begin{frame}
+  \frametitle{Vortex Detection Algorithems}
+  \begin{itemize}
+  \item Vortex identificaion methods are categorized into 3 taxonomies:
+    \begin{itemize}
+      \item[-] \textbf{Region}/\textbf{Line}
+      \item[-] \textbf{Eulerian}/\textbf{Lagrangian}.
+      \item[-] \textbf{Local}/\textbf{Global}.
+    \end{itemize}
+    \item One of widly used algorithms is $\lambda_{2}$ method:
+    \begin{itemize}
+      \item  $\nabla \overline{u}$ is decomposed into \textit{symmetric}($\mathnormal{S}$) and \textit{anti-symmetric}($\mathnormal{\Omega}$) parts.
+      \item three eigenvalues of $\mathnormal{S}^2+\mathnormal{\Omega}^2$ to be calculated.
+      \item A point int the velocity field is a part of vortex core if at least 2 of them are negative i.e. $\lambda_{2}<0$
+    \end{itemize}
+  %\item Drawbacks:
+  %  \begin{itemize}
+  %    \item[-] may false positive be produced.
+  %    \item[-] only use local operators for detecting global features.
+  %  \end{itemize}
+  \end{itemize}     
+  
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -140,12 +181,12 @@
   \begin{itemize}
     \item[(a)] Data preparation:
     \begin{itemize}
-      \item[-] Running the  \textit{Taylor merve} case for different values of  $\{\omega_{inner}, \omega_{outter}, \mathnormal{Re}\}$
+      \item[-] Running the  \textit{Taylor merve} case for different values of  $\{\omega_{inner}, \omega_{outer}, \mathnormal{Re}\}$
       \item[-] Collecting the velocity fields and $\lambda_2$ vectors for all time steps.
     \end{itemize}
     \item [(b)] Model development:
       \begin{itemize}
-        \item Trying to Learn the mapping from a function in field to a \textbf{Region-like} method for detecting vortices. 
+        \item Trying to Learn the mapping from a function in field to $\lambda_{2}$ method for detecting vortices.
       \end{itemize}
   \end{itemize}
 \end{frame}
@@ -216,7 +257,9 @@
 \begin{frame}
   \frametitle{Motivation}
   \begin{itemize}
-    \item 
+    \item Learning the $\lambda_{2}$ operator for detecting vortices within a field.
+    \item Replacing the Finit-Element mothods with NN-surrogate model
+    \item Elinimate the need for manual detection of vortices in flow system using visualization 
   \end{itemize}
 \end{frame}
 

@@ -1,9 +1,11 @@
 \babel@toc {ngerman}{}
-\beamer@sectionintoc {1}{Problem Statment}{3}{0}{1}
-\beamer@sectionintoc {2}{Task definition and objective}{4}{0}{2}
-\beamer@sectionintoc {3}{Litrature Review}{5}{0}{3}
-\beamer@sectionintoc {4}{Approache}{7}{0}{4}
-\beamer@subsectionintoc {4}{1}{Deep Operator Learning (DeepOnet)}{8}{0}{4}
-\beamer@sectionintoc {5}{Motivation}{10}{0}{5}
-\beamer@sectionintoc {6}{Time Planning}{11}{0}{6}
+\beamer@sectionintoc {1}{Problem Statement}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Taylor-Couette flow}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Vortex Detection Algorithms}{5}{0}{1}
+\beamer@sectionintoc {2}{Task definition and objective}{6}{0}{2}
+\beamer@sectionintoc {3}{Litrature Review}{7}{0}{3}
+\beamer@sectionintoc {4}{Approache}{9}{0}{4}
+\beamer@subsectionintoc {4}{1}{Deep Operator Learning (DeepOnet)}{10}{0}{4}
+\beamer@sectionintoc {5}{Motivation}{12}{0}{5}
+\beamer@sectionintoc {6}{Time Planning}{13}{0}{6}
 \contentsline {section}{Literatur}
