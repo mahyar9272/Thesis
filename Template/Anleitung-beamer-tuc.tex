@@ -73,13 +73,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem Statment}
 \begin{frame}
-  \frametitle{Problem Statment}
-  \large \color{TUCgreen}\textbf{Taylor-Couette Flow}
-  \begin{itemize}
-    \item It is defined as a fluid dynamic phenomenon that occurs when a fluid is passing between two coaxial-rotating cylinders.
-    \item Inner cylinder is typically rotating faster than outer cylinder. This configuration can lead to various flow patterns and instabilities.
-    \item Dimensionless control parameters like \(\mathnormal{Re}\), ration of cylinder radii, 
-  \end{itemize}
+  \frametitle{Problem Statement}
+  \begin{minipage}{0.45\textwidth}
+    \large \color{TUCgreen}\textbf{Taylor-Couette flow}
+    \begin{itemize}
+      \item a fluid dynamic phenomenon that occurs when a fluid is passing between two coaxial-rotating cylinders.
+      \item Inner cylinder is typically rotating faster than outer cylinder.
+      \item Dimensionless control parameters like \(\mathnormal{Re}\), $\omega_{inner}$ and $\omega_{outter}$  are key factors
+    \end{itemize}
+  \end{minipage}
+  \begin{minipage}{0.45\textwidth}
+    \vspace{-1.0 cm}
+    \centering
+    \begin{figure}[h]
+      \includegraphics[width=0.9\textwidth]{Taylor_merve_vortex.png}
+      \caption{\tiny{Taylor-couette vortices at time-step 200}}
+    \end{figure}
+  \end{minipage}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -119,20 +129,24 @@
     \item[(b)] \cite{Wang2021}, replacing the fully-connected NN with a segmented network to reduce the computational complexity.
   \end{itemize}
   \begin{center}
-    \includegraphics[width=0.85\textwidth]{litratur_review_wang.png}
+    \includegraphics[width=0.9\textwidth]{U-net.png}
   \end{center}
 \end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Approache}
 \begin{frame}
-  \frametitle{Approaches}
+  \frametitle{Approach}
   \begin{itemize}
-    \item The 
+    \item[(a)] Data preparation:
+    \begin{itemize}
+      \item[-] running the  \textit{Taylor merve} case for different values of  $\{\omega_{inner}, \omega_{outter}, \mathnormal{Re}\}$
+      \item[-] gathering the all data and 
+    \end{itemize} 
   \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Deep Operator Learning (DeepOnet)}
 \begin{frame}
   \frametitle{Deep operator networks\cite{lu2021learning} (DeepONets)}\
   \centering
@@ -174,6 +188,7 @@
 
 \end{minipage}
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
 %\frametitle{}\
@@ -191,31 +206,14 @@
 %  \end{minipage}
 %\end{frame}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Motivation}
 \begin{frame}
-  \frametitle{}\
-  
-\begin{minipage}{0.3\textwidth}
-    %Inputs of branch: \\$\mathbf{E} \in \mathbb{R}^3$, ($N_s$, 3)
-
-    %Outputs of branch: \\$\boldsymbol{b} \in \mathbb{R}^{N_f}$, ($N_s$, $N_f$)
-
-    \vspace{\baselineskip}
-
-    %Inputs of trunk: \\$\mathbf{X} \in \mathbb{R}^{10561}$, (10561, 2)
-
-    %Outputs of trunk: \\$\boldsymbol{t} \in \mathbb{R}^{N_f}$, (10561, $N_f$)
-\end{minipage}
-\begin{minipage}{0.35\textwidth}
-    %\includegraphics[width=\textwidth, trim={10.05cm 0cm 0cm 4.8cm}, clip]{deeponet.pdf}
-\end{minipage}
-\begin{minipage}{0.3\textwidth}
-
-  %Outputs: \\$\boldsymbol{u} \in \mathbb{R}^{2\times10561}$, \\($N_s$, $N_f$) $\bigotimes$ (10561, $N_f$)$^{T}$
-
-\end{minipage}
+  \frametitle{Motivation}
+  \begin{itemize}
+    \item 
+  \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
