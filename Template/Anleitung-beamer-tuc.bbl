@@ -1,6 +1,43 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Deng%
+\ \protect \BOthers {.}}{%
+Deng%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+DENG2022108229}
+\APACinsertmetastar {%
+DENG2022108229}%
+\begin{APACrefauthors}%
+Deng, L.%
+, Bao, W.%
+, Wang, Y.%
+, Yang, Z.%
+, Zhao, D.%
+, Wang, F.%
+\BDBL {}Guo, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Vortex-U-Net: An efficient and effective vortex
+  detection approach based on U-Net structure} {Vortex-u-net: An efficient and
+  effective vortex detection approach based on u-net structure}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied Soft Computing}{115}{}{108229}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/S1568494621010620}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.asoc.2021.108229}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Liang%
 \ \protect \BOthers {.}}{%
 Liang%
@@ -61,43 +98,6 @@ Lu, L.%
   operators}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Nature Machine Intelligence}{3}{3}{218--229}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Wang%
-, Deng%
-, Yang%
-, Zhao%
-\BCBL {}\ \BBA {} Wang%
-}{%
-Wang%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-Wang2021}
-\APACinsertmetastar {%
-Wang2021}%
-\begin{APACrefauthors}%
-Wang, Y.%
-, Deng, L.%
-, Yang, Z.%
-, Zhao, D.%
-\BCBL {}\ \BBA {} Wang, F.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{Feb}{01}.
-\newblock
-{\BBOQ}\APACrefatitle {A rapid vortex identification method using fully
-  convolutional segmentation network} {A rapid vortex identification method
-  using fully convolutional segmentation network}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{The Visual Computer}{37}{2}{261-273}.
-\newblock
-\begin{APACrefURL} \url{https://doi.org/10.1007/s00371-020-01797-6}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1007/s00371-020-01797-6} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

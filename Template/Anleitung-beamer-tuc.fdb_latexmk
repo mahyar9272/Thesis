@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex Anleitung-beamer-tuc"] 1702388148 "Anleitung-beamer-tuc.aux" "Anleitung-beamer-tuc.bbl" "Anleitung-beamer-tuc" 1702389153
+["bibtex Anleitung-beamer-tuc"] 1702392261 "Anleitung-beamer-tuc.aux" "Anleitung-beamer-tuc.bbl" "Anleitung-beamer-tuc" 1702393902
   "/usr/local/texlive/2018/texmf-dist/bibtex/bst/apacite/apacite.bst" 1480098433 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "Anleitung-beamer-tuc.aux" 1702389152 5642 1d0808f77353ebebda1779cbe04ba013 ""
+  "Anleitung-beamer-tuc.aux" 1702392816 5622 208f241daedcfebe4959e27efe010338 ""
   "references.bib" 1702387105 4554 e11764b13c3b1d726072f3552b1c748f ""
   (generated)
   "Anleitung-beamer-tuc.blg"
   "Anleitung-beamer-tuc.bbl"
-["pdflatex"] 1702389151 "/home/ma64/Thesis/Template/Anleitung-beamer-tuc.tex" "/home/ma64/Thesis/Template/Anleitung-beamer-tuc.pdf" "Anleitung-beamer-tuc" 1702389153
-  "/home/ma64/Thesis/Template/Anleitung-beamer-tuc.aux" 1702389152 5642 1d0808f77353ebebda1779cbe04ba013 ""
-  "/home/ma64/Thesis/Template/Anleitung-beamer-tuc.tex" 1702389150 7983 0d66591f8cf521cf7cfbc3d7e040bd33 ""
+["pdflatex"] 1702392815 "/home/ma64/Thesis/Template/Anleitung-beamer-tuc.tex" "/home/ma64/Thesis/Template/Anleitung-beamer-tuc.pdf" "Anleitung-beamer-tuc" 1702393902
+  "/home/ma64/Thesis/Template/Anleitung-beamer-tuc.aux" 1702392816 5622 208f241daedcfebe4959e27efe010338 ""
+  "/home/ma64/Thesis/Template/Anleitung-beamer-tuc.tex" 1702393901 8236 524c113530428859100c1ecb9fd7977c ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1480098668 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1480098668 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1480098668 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -252,12 +252,12 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1541583611 2972202 0e02dba1829b9721132118a7a3cb496b ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1541583683 4222486 9dcaad6dec6452020eb0b9b3b20c7836 ""
   "/usr/local/texlive/2018/texmf.cnf" 1540470520 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "Anleitung-beamer-tuc.aux" 1702389152 5642 1d0808f77353ebebda1779cbe04ba013 ""
-  "Anleitung-beamer-tuc.bbl" 1702388148 2365 cffd0414914eb801f82cfd0bd5c4338f "bibtex Anleitung-beamer-tuc"
-  "Anleitung-beamer-tuc.nav" 1702389152 2632 de2727798bb3dc0cc4aca22eb1ae0892 ""
-  "Anleitung-beamer-tuc.out" 1702389152 431 8203c1104093912e353bbe031bf8b21a ""
-  "Anleitung-beamer-tuc.tex" 1702389150 7983 0d66591f8cf521cf7cfbc3d7e040bd33 ""
-  "Anleitung-beamer-tuc.toc" 1702389152 444 4197cc667b24539dcc5adf7a48188e35 ""
+  "Anleitung-beamer-tuc.aux" 1702392816 5622 208f241daedcfebe4959e27efe010338 ""
+  "Anleitung-beamer-tuc.bbl" 1702392261 2422 402ab28cc4f8d956f85f3a71fed100e5 "bibtex Anleitung-beamer-tuc"
+  "Anleitung-beamer-tuc.nav" 1702392816 2632 de2727798bb3dc0cc4aca22eb1ae0892 ""
+  "Anleitung-beamer-tuc.out" 1702392816 431 8203c1104093912e353bbe031bf8b21a ""
+  "Anleitung-beamer-tuc.tex" 1702393901 8236 524c113530428859100c1ecb9fd7977c ""
+  "Anleitung-beamer-tuc.toc" 1702392816 444 4197cc667b24539dcc5adf7a48188e35 ""
   "Logo_TUC_de_RGB.pdf" 1696517407 10302 527352ebcf9983dc0a8a9eecf6405501 ""
   "beamercolorthemeTUC.sty" 1696517407 1493 d2a1e6a5efc6865cb482254083dba2b4 ""
   "beamerfontthemeTUC2.sty" 1696517407 1630 b4aeabed44f528c9cef4d258e519bacd ""

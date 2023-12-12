@@ -87,7 +87,7 @@
     \centering
     \begin{figure}[h]
       \includegraphics[width=0.9\textwidth]{Taylor_merve_vortex.png}
-      \caption{\tiny{Taylor-couette vortices at time-step 200}}
+      \caption{\tiny{Taylor-couette flow at time-step 19}}
     \end{figure}
   \end{minipage}
 \end{frame}
@@ -126,7 +126,7 @@
 \begin{frame}
   \frametitle{Litrature Review}
   \begin{itemize}
-    \item[(b)] \cite{Wang2021}, replacing the fully-connected NN with a segmented network to reduce the computational complexity.
+    \item[(b)] \cite{DENG2022108229}, replacing the fully-connected NN with a segmented network to reduce the computational complexity.
   \end{itemize}
   \begin{center}
     \includegraphics[width=0.9\textwidth]{U-net.png}
@@ -140,9 +140,13 @@
   \begin{itemize}
     \item[(a)] Data preparation:
     \begin{itemize}
-      \item[-] running the  \textit{Taylor merve} case for different values of  $\{\omega_{inner}, \omega_{outter}, \mathnormal{Re}\}$
-      \item[-] gathering the all data and 
-    \end{itemize} 
+      \item[-] Running the  \textit{Taylor merve} case for different values of  $\{\omega_{inner}, \omega_{outter}, \mathnormal{Re}\}$
+      \item[-] Collecting the velocity fields and $\lambda_2$ vectors for all time steps.
+    \end{itemize}
+    \item [(b)] Model development:
+      \begin{itemize}
+        \item Trying to Learn the mapping from a function in field to a \textbf{Region-like} method for detecting vortices. 
+      \end{itemize}
   \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
