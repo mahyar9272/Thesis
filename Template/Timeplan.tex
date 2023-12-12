@@ -1,0 +1,42 @@
+%%% Preamble
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}   % Article class of KOMA-script with 11pt font and a4 format
+\usepackage[pdftex]{graphicx}   %Enable pdflatex
+\usepackage{pgfgantt}
+\newcounter{myWeekNum}
+\stepcounter{myWeekNum}
+%
+\newcommand{\myWeek}{\themyWeekNum
+    \stepcounter{myWeekNum}
+    \ifnum\themyWeekNum=53
+         \setcounter{myWeekNum}{1}
+    \else\fi
+}
+%
+%%% Begin document
+\begin{document}
+\setcounter{myWeekNum}{1}
+\ganttset{%
+calendar week text={\myWeek{}}%
+}
+%
+\begin{figure}[h!bt]
+\begin{center}
+\begin{ganttchart}[
+vgrid={*{6}{draw=none}, dotted},
+x unit=.08cm,
+y unit title=.6cm,
+y unit chart=.6cm,
+time slot format=isodate,
+time slot format/start date=2014-12-01]{2023-12-01}{2024-03-31}
+\ganttset{bar height=0.6}
+\gantttitlecalendar{year, month=name, week} \\
+\ganttbar[bar/.append style={fill=blue}]{Litrature Review}{2023-12-01}{2023-12-31}\\
+\ganttbar[bar/.append style={fill=green}]{Running the simulations}{2023-12-15}{2023-12-31}\\
+\ganttbar[bar/.append style={fill=purple}]{Data preparation}{2024-01-01}{2024-01-15}\\
+\ganttbar[bar/.append style={fill=pink}]{Training Network}{2024-01-15}{2024-01-30}\\
+\ganttbar[bar/.append style={fill=pink}]{Post-processing and Finalizing}{2024-02-01}{2024-02-30}\\
+\ganttbar[bar/.append style={fill=yellow}]{Writing Thesis}{2024-02-15}{2024-03-25}\\
+\end{ganttchart}
+\end{center}
+\end{figure}
+\end{document}
