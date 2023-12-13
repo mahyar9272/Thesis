@@ -1,9 +1,9 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Anleitung-beamer-tuc.aux
 The style file: apacite.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
@@ -13,44 +13,44 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 3 entries,
+You've used 4 entries,
             6951 wiz_defined-function locations,
-            1292 strings with 11500 characters,
-and the built_in function-call counts, 7224 in all, are:
-= -- 809
-> -- 81
-< -- 366
-+ -- 406
-- -- 6
-* -- 512
-:= -- 1364
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 53
+            1298 strings with 11682 characters,
+and the built_in function-call counts, 9419 in all, are:
+= -- 1108
+> -- 100
+< -- 467
++ -- 504
+- -- 8
+* -- 643
+:= -- 1740
+add.period$ -- 15
+call.type$ -- 4
+change.case$ -- 72
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 241
-empty$ -- 274
-format.name$ -- 162
-if$ -- 1275
+cite$ -- 8
+duplicate$ -- 282
+empty$ -- 346
+format.name$ -- 194
+if$ -- 1701
 int.to.chr$ -- 0
-int.to.str$ -- 9
+int.to.str$ -- 12
 missing$ -- 0
-newline$ -- 94
-num.names$ -- 24
-pop$ -- 95
+newline$ -- 120
+num.names$ -- 32
+pop$ -- 151
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 20
 quote$ -- 0
-skip$ -- 423
+skip$ -- 570
 stack$ -- 0
-substring$ -- 428
-swap$ -- 138
-text.length$ -- 8
+substring$ -- 532
+swap$ -- 163
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 240
+type$ -- 384
 warning$ -- 0
-while$ -- 54
+while$ -- 68
 width$ -- 0
-write$ -- 126
+write$ -- 161

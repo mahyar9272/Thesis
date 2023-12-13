@@ -101,7 +101,7 @@
     \vspace{-0.5 cm}
     \centering
     \begin{figure}[h]
-      \includegraphics[width=0.9\textwidth]{Taylor_merve_vortex.png}
+      \includegraphics[width=0.55\textwidth]{Taylor_white_back.png}
       \caption{\tiny{Taylor-couette flow at time-step 19}}
     \end{figure}
   \end{minipage}
@@ -118,7 +118,7 @@
       \item[-] \textbf{Eulerian}/\textbf{Lagrangian}.
       \item[-] \textbf{Local}/\textbf{Global}.
     \end{itemize}
-    \item One of widly used algorithms is $\lambda_{2}$ method:
+    \item One of widely used algorithms is $\lambda_{2}$ method:
     \begin{itemize}
       \item  $\nabla \overline{u}$ is decomposed into \textit{symmetric}($\mathnormal{S}$) and \textit{anti-symmetric}($\mathnormal{\Omega}$) parts.
       \item three eigenvalues of $\mathnormal{S}^2+\mathnormal{\Omega}^2$ to be calculated.
@@ -142,13 +142,11 @@
       \begin{equation}
         \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho}\nabla p + \nu \nabla^2 \mathbf{u} + \mathbf{f}
       \end{equation}
-    \item w.r.t boundary conditions:\\
+    \item w.r.t boundary condition:\\
     \begin{align}
-      \mathbf{u} &= \mathbf{u}_0 \quad \text{at} \quad \Gamma_1 \\
-      \mathbf{u} &= 0 \quad \text{at} \quad \Gamma_2 \\
-      \frac{\partial p}{\partial n} &= 0 \quad \text{at} \quad \Gamma_3
+      \mathbf{u}(\mathbf{x} + \mathbf{L}) &= \mathbf{u}(\mathbf{x}),
     \end{align}
-
+    where $\mathbf{L}$ is the periodicity vector
   \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,12 +179,14 @@
   \begin{itemize}
     \item[(a)] Data preparation:
     \begin{itemize}
-      \item[-] Running the  \textit{Taylor merve} case for different values of  $\{\omega_{inner}, \omega_{outer}, \mathnormal{Re}\}$
+      \item[-] Running the  \textit{Taylor-couette} case for different values of  $\{\omega_{inner}, \omega_{outer}, \mathnormal{Re}\}$
       \item[-] Collecting the velocity fields and $\lambda_2$ vectors for all time steps.
+      \item[-] Data augmentation techniques \cite{Berenjkoub2020} like \textit{Linear Transformation} can be used, to compensate the lack of training data.
     \end{itemize}
     \item [(b)] Model development:
       \begin{itemize}
-        \item Trying to Learn the mapping from a function in field to $\lambda_{2}$ method for detecting vortices.
+        \item[-] Trying to Learn the mapping from a function in field to $\lambda_{2}$ method for detecting vortices.
+        \item[-] The objective of trained network is to perform a classification based on the predicted $\lambda_{2}$ values.
       \end{itemize}
   \end{itemize}
 \end{frame}

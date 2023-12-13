@@ -1,6 +1,34 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Berenjkoub%
+, Chen%
+\BCBL {}\ \BBA {} Günther%
+}{%
+Berenjkoub%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Berenjkoub2020}
+\APACinsertmetastar {%
+Berenjkoub2020}%
+\begin{APACrefauthors}%
+Berenjkoub, M.%
+, Chen, G.%
+\BCBL {}\ \BBA {} Günther, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{10}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Vortex Boundary Identification using Convolutional
+  Neural Network} {Vortex boundary identification using convolutional neural
+  network}.{\BBCQ}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/VIS47514.2020.00059} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Deng%
 \ \protect \BOthers {.}}{%
 Deng%
